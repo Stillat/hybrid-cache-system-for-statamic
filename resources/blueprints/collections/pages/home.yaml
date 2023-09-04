@@ -1,0 +1,56 @@
+title: Home
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              character_limit: 0
+              display: Title
+              validate:
+                - required
+          -
+            handle: subtitle
+            field:
+              character_limit: 0
+              type: text
+              display: Subtitle
+          -
+            handle: content
+            field:
+              restrict: false
+              automatic_line_breaks: true
+              automatic_links: false
+              escape_markup: true
+              smartypants: false
+              type: markdown
+              display: Content
+          -
+            handle: template
+            field:
+              type: template
+              display: Template
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+          -
+            handle: parent
+            field:
+              type: entries
+              collections:
+                - pages
+              max_items: 1
+              listable: false
+              localizable: true

@@ -1,0 +1,20 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        display: 'Section One'
+        instructions: 'Section One Instructions'
+        fields:
+          -
+            handle: text_field
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: 'Text Field'
+              icon: text
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
